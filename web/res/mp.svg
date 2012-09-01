@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    version="1.0"
+    id="proper_amaranth"
+    height="64"
+    width="64">
+    <defs>
+    	<radialGradient id="grad1" cx="50%" cy="30%" r="80%" fx="50%" fy="80%">
+			<stop offset="0%" style="stop-color:#D93341;stop-opacity:1" />
+			<stop offset="100%" style="stop-color:rgb(109,13,34);stop-opacity:1" />
+		</radialGradient>
+		<radialGradient id="grad2" cx="50%" cy="30%" r="80%" fx="50%" fy="60%">
+			<stop offset="0%" style="stop-color:rgb(255,100,120);stop-opacity:1" />
+			<stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+		</radialGradient>
+    </defs>
+    <style>
+    .white {
+    	stroke: #FFFFFF;
+    	stroke-width: 2px
+    }
+    .bottom {
+    	fill: url(#grad1);
+    }
+    .blob {
+    	fill: url(#grad2);
+    }
+    </style>
+    
+    <circle class="white bottom" cx="32" cy="32" r="30"/>
+    <ellipse class="white blob" cx="32" cy="16" rx="10" ry="9" />
+    <ellipse class="white blob" cx="32" cy="16" rx="10" ry="8" transform="rotate(120 32 32)" />
+    <ellipse class="white blob" cx="32" cy="16" rx="10" ry="8" transform="rotate(240 32 32)" />
+</svg>

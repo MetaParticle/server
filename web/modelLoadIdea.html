@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<title></title>
+	<link href="" rel="stylesheet" />
+	<script src="res/play/jQuery.js" ></script>
+	<script>
+"use strict";
+var section;
+$(function() {
+	section = $("section");
+	s = new MP.Ship();
+});
+var s;
+var MP = MP || {};
+
+MP.ModelDB = {
+	load: function(name) {
+		var url = this._nameToURL(name);
+		this[name]=url;
+		return url;
+	},
+	_nameToURL: function(name) {
+		return "dush_basic.js";
+	}
+}
+
+MP.Ship = function() {
+	if (MP.ModelDB.ship !== undefined) {
+		//this.mesh = new ShipMesh(MP.ModelDB.ship);
+		this.mesh = MP.ModelDB.ship;
+	} else {
+		this.mesh = MP.ModelDB.load("ship");
+		//this.mesh = new PlaceholderMesh();
+		//this.mesh = new ShipMesh(MP.ModelDB.load("ship"));
+	}
+}
+
+MP.Ship.prototype = {
+	constructor: MP.Ship,
+	mesh: "placeholder"
+}
+	</script>
+</head>
+<body>
+	<header></header>
+	<nav></nav>
+	<section></section>
+	<footer></footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+	background: #6D0D22;
+	color: white;
+}
+#content {
+	background: #58091A;
+}
+header {
+	background-image: linear-gradient(bottom, rgb(128,31,53) 20%, rgb(109,13,34) 87%);
+	background-image: -o-linear-gradient(bottom, rgb(128,31,53) 20%, rgb(109,13,34) 87%);
+	background-image: -moz-linear-gradient(bottom, rgb(128,31,53) 20%, rgb(109,13,34) 87%);
+	background-image: -webkit-linear-gradient(bottom, rgb(128,31,53) 20%, rgb(109,13,34) 87%);
+	background-image: -ms-linear-gradient(bottom, rgb(128,31,53) 20%, rgb(109,13,34) 87%);
+	border-radius: 0 0 10px 10px;
+}
+	header a {
+		text-decoration: none;
+	}
+	header h1 {
+		color: white;
+		
+	}
+	header h3 {
+		color: #C0526A;
+	}
+nav {
+	
+}
+	nav a {
+		text-decoration: none;
+		color: #fff;
+	}
+	nav a:hover {
+		background: #68192A;
+		border-radius: 5px;
+	}
+section {
+
+}
+	section article, aside#index {
+		background-image: linear-gradient(bottom, rgb(128,31,53) 20%, rgb(109,13,34) 87%);
+		background-image: -o-linear-gradient(bottom, rgb(128,31,53) 20%, rgb(109,13,34) 87%);
+		background-image: -moz-linear-gradient(bottom, rgb(128,31,53) 20%, rgb(109,13,34) 87%);
+		background-image: -webkit-linear-gradient(bottom, rgb(128,31,53) 20%, rgb(109,13,34) 87%);
+		background-image: -ms-linear-gradient(bottom, rgb(128,31,53) 20%, rgb(109,13,34) 87%);
+		border-radius: 10px;
+	}
+		section h2 {
+			border-bottom: solid 2px #fff;
+		}
+	section div.code {
+		background: #433;
+		border: 1px solid #866;
+	}
+		section .code .keyword {
+			font-weight: bold;
+		}
+		section .code .comment {
+			font-style: italic;
+			color: #9c9;
+		}
+.button {
+	background: #C0526A;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #6D0D22;
+}
+	.button:hover {
+		background: #fff;
+	}
+footer {
+	background-image: linear-gradient(bottom, rgb(109,13,34) 20%, rgb(128,31,53) 87%);
+	background-image: -o-linear-gradient(bottom, rgb(109,13,34) 20%, rgb(128,31,53) 87%);
+	background-image: -moz-linear-gradient(bottom, rgb(109,13,34) 20%, rgb(128,31,53) 87%);
+	background-image: -webkit-linear-gradient(bottom, rgb(109,13,34) 20%, rgb(128,31,53) 87%);
+	background-image: -ms-linear-gradient(bottom, rgb(109,13,34) 20%, rgb(128,31,53) 87%);
+	border-radius: 10px 10px 0 0;
+}

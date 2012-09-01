@@ -1,0 +1,110 @@
+html, body, header, section, h1, h2, h3 {
+	padding: 0;
+	margin: 0;
+}
+header, article {
+	margin-bottom: 2px;
+}
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
+}
+#content {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.center {
+	text-align: center;
+}
+.focus, div.code {
+	margin: 1em;
+	padding: 1em;
+}
+.edit {
+	margin: 2em 0 0 2em;
+	font-style: italic;
+	font-size: small;
+}
+header {
+	padding: 2em;
+	display: block;
+	padding-left: 2em;
+}
+	header .pageTitle {
+		text-align: center;
+	}
+		header .pageTitle a {
+			text-decoration: none;
+		}
+nav {
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+	nav a {
+		margin: 0 2em;
+		padding: 6px 12px;
+	}
+
+/* SECTION */
+section {
+	vertical-align: text-top;
+}
+	section#api {
+		height: 700px;
+	}
+	section .code {
+		font-family: "Consolas", monospace;
+	}
+	section article, aside#index {
+		padding: 1em 2em;
+	}
+
+		section article h2 {
+			display: block;
+		}
+		section article h3 {
+			margin: 1em;
+		}
+		/*
+		.scrollBar {
+			display: block;
+			position: relative;
+			float: right;
+			right: -1em;
+			bottom: -500px;
+			width: 0.5em;
+			height: 200px;
+			background: rgba(50, 50, 50, 0.25);
+			border-radius: 5px;
+		}
+		.scrollBar:hover {
+			background: rgba(50, 50, 50, 0.5);
+		}
+		*/
+	article#container {
+		width: 600px;
+		float: right;
+	}
+	aside#index {
+		width: 160px;
+		float: left;
+	}
+	article#container, aside#index {
+		height: 665px;
+		display: block;
+		overflow-y: scroll;
+	}
+.button {
+	text-transform: uppercase;
+	padding: 6px 12px;
+	margin: 0 1px;
+	text-align: center;
+}
+footer {
+	font-size: 12px;
+	padding: 1em;
+	display: block;
+	height: 4em;
+	text-align: center;
+}

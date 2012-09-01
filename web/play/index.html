@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meta Particle</title>
+	<!-- Web general content -->
+	<link href="/res/layout.css" rel="stylesheet" />
+	<link href="/res/color.css" rel="stylesheet" />
+	<!-- Game specific content -->
+	<!--<link href="/res/play/layout.css" rel="stylesheet" />-->
+	<link href="/res/play/color.css" rel="stylesheet" />
+	<script>
+		var fullScreen = false;
+	</script>
+	<script src="/res/jQuery.js"></script>
+	<script src="/res/play/THREE.js"></script>
+	<script src="/res/play/MP.js"></script>
+	<script src="/res/play/MP.Control.js"></script>
+	<script src="/res/play/MP.Planet.js"></script>
+	<script src="/res/play/MP.Ship.js"></script>
+	<script src="/res/play/MP.Player.js"></script>
+	<script src="/res/play/meta_particle.js"></script>
+	<style>
+		#debugWindow {
+			height: 450px;
+			width: 300px;
+			float: right;
+			background: white;
+			color: black;
+		}
+		#container {
+			font-family: Helvetica, Arial, sans-serif;
+			position: relative;
+		}
+		.window {
+			padding: ;
+			min-width: 300px;
+			position: absolute;
+			color: black;
+			background: white;
+			padding: 10px;
+		}
+		.window h1 {
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: -1px;
+			margin-bottom: 10px;
+		}
+		.window input {
+			padding: 2px;
+			margin: 0 5px 5px 0;
+		}
+	</style>
+</head>
+<body>
+<div id="content">
+	<header>
+		<div class="pageTitle"><a href="/">
+			<h1>Meta Particle :: {{ .Name }}</h1>
+			<h3>online multiplayer space shooter</h3>
+		</a></div>
+	</header>
+	<nav class="center">
+		<a class="navLink" href="/play/">play</a>
+		<a class="navLink" href="/#news">news</a>
+		<a class="navLink" href="/about/">about</a>
+		<a class="navLink" href="/contact/">contact</a>
+		<a class="navLink" href="/docs/">docs</a>
+	</nav>
+	<div id="container">
+		<div id="login" class="window" style="right: 30px;top: 20%;">
+			<h1>Meta Particle</h1>
+			<form>
+				<input type="email" placeholder="Account email"/><br/>
+				<input type="password" placeholder="Password"/><br/>
+				<input type="submit" value="Login" onclick="event.preventDefault();$('#login').slideUp()"/>
+			</form>
+		</div>
+		<div id="copyright" class="window" style="left: 20%; bottom: 5%;">
+			<h1>Copyright</h1>
+			<p>All your base are belong to us! :)</p>
+			<form>
+				<input type="submit" value="Hide" onclick="event.preventDefault();$('#copyright').slideUp()"/>
+			</form>
+		</div>
+		<!--<div id="debugWindow"><h5>Debugging</h5></div>-->
+	</div>
+	<section>
+		<article>
+			<h2>Game Log</h2>
+			<div id="log"></div>
+		</article>
+	</section>
+	<footer>MetaParticle © 2012<br /></footer>
+</div>
+</body>
+</html>

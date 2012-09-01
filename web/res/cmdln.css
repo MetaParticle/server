@@ -1,0 +1,36 @@
+body {
+	font-family: Consolas, monospace;
+	background: #000;
+	color: #ccc;
+	margin: 0;
+}
+section.terminal {
+	padding: 0 2em 0 2em;
+	height: 100%;
+}
+.output {
+	padding: 2em 0 1em 0;
+	height: 100%;
+	overflow-y: scroll;
+}
+.input {
+	padding-top: 1em;
+	border-top: solid 1px #ccc;
+	position: absolute;
+	height: 2em;
+	width: 100%;
+	bottom: 0px;
+}
+form {
+}
+input {
+	font-family: Consolas, monospace;
+	text-decoration: none;
+	border: none;
+	background: #000;
+	color: #ccc;
+	width: 80%;
+}
+input:focus {
+	border: none;
+}
